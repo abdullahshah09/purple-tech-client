@@ -5,8 +5,7 @@ import SignIn from '../../components/signin/signin.component';
 
 import './signupandsignin.styles.scss';
 
-const SignUpAndSignIn = ( {match}) => {
-   console.log(match)
+const SignUpAndSignIn = () => {
    return (
       <div className="signup-and-signin">
          <SignIn />
