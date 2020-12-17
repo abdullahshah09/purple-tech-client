@@ -28,7 +28,7 @@ const SignIn = () => {
       var isValid = await userSignInSchema.isValid(formData);
       console.log(isValid);
       if (isValid) {
-         Axios.post('http://localhost:3001/login', {
+         Axios.post('https://purple-tech-co.herokuapp.com/login', {
             email: emailLog,
             password: passwordLog 
          }).then((response) => {
@@ -38,7 +38,7 @@ const SignIn = () => {
             } else
              {
                isUserLoggedIn(response.data[0].username);
-               Axios.get("http://localhost:3001/login").then((response) => {
+               Axios.get("https://purple-tech-co.herokuapp.com/login").then((response) => {
                   if (response.data.loggedIn == true) {
                     isUserLoggedIn(response.data.user[0].username);
                   }

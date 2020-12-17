@@ -18,7 +18,7 @@ const SignUp = () => {
 
    const signUp = (data) => {
       console.log(data);
-      Axios.post('http://localhost:3001/register', {
+      Axios.post('https://purple-tech-co.herokuapp.com/register', {
             username: data.name,
             email: data.email,
             password: data.password 

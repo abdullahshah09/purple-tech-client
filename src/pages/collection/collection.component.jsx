@@ -18,7 +18,7 @@ const CollectionPage = ({ match }) => {
    useEffect(() =>{
 
       if (match.params.collectionId) {
-         Axios.get(`http://localhost:3001/products/${match.params.collectionId}`, {
+         Axios.get(`https://purple-tech-co.herokuapp.com/products/${match.params.collectionId}`, {
          }).then((response) => {
             if (response.data) {
                dispatchCollectionItems(response.data);
