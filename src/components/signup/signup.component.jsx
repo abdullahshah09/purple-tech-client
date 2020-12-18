@@ -9,13 +9,7 @@ import './signup.styles.scss';
 const SignUp = () => { 
 
    Axios.defaults.withCredentials = true;
-
-   const [usernameReg, setUsernameReg] = useState('');
-   const [emailReg, setEmailReg] = useState('');
-   const [passwordReg, setPasswordReg] = useState('');
-
-
-
+   
    const signUp = (data) => {
       console.log(data);
       Axios.post('https://purple-tech-co.herokuapp.com/register', {
