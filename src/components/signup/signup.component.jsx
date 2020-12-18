@@ -10,7 +10,7 @@ const SignUp = () => {
 
    Axios.defaults.withCredentials = true;
    
-   const signUp = (data) => {
+   const registerUser = (data) => {
       console.log(data);
       Axios.post('https://purple-tech-co.herokuapp.com/register', {
             username: data.name,
@@ -21,50 +21,6 @@ const SignUp = () => {
          });
          
       } 
-   
-//       <Form onSubmit={loginUser} >
-//       <Form.Group controlId="formBasicEmail">
-//          <Form.Label>Display Name</Form.Label>
-//          <Form.Control type="text" 
-         
-//          placeholder="Enter name"
-//          onChange={handleChange}
-//          value={values.name}
-//          />
-//          <div className="error-message">
-//             {errors.name}
-//          </div>
-//       </Form.Group>
-//       <Form.Group controlId="formBasicEmail">
-//          <Form.Label>Email address</Form.Label>
-//          <Form.Control type="email" placeholder="Enter email"
-//          onChange={handleChange}
-//          />
-//          <Form.Text className="text-muted">
-//             We'll never share your email with anyone else.
-//          </Form.Text>
-//       </Form.Group>
-
-//       <Form.Group controlId="formBasicPassword">
-//          <Form.Label>Password</Form.Label>
-//          <Form.Control type="password" placeholder="Password"
-//          onChange={handleChange}
-//          />
-//       </Form.Group>
-//       <Form.Group controlId="formBasicPassword">
-//          <Form.Label>Confirm Password</Form.Label>
-//          <Form.Control type="password" placeholder="Confirm Password"
-//          onChange={handleChange}
-//          />
-//       </Form.Group>
-//       <h3 style={{color: 'red'}}>{signInError}</h3>
-//       <Button variant="primary" type="submit"
-      
-//       >
-//          Submit
-//       </Button>
-//   </Form>
-
 
    return (
     
@@ -77,7 +33,7 @@ const SignUp = () => {
                confirmPassword: ''
             }}
             validationSchema={userSignUpSchema}
-            onSubmit={signUp}
+            onSubmit={registerUser}
             >
                {({
                   values,
