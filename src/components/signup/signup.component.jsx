@@ -109,7 +109,7 @@ const SignUp = () => {
                            </div> : null
                            }
                         </Form.Group>
-                        <Button variant="primary" type="submit" onClick={handleReset}>
+                        <Button variant="primary" type="submit">
                            Submit
                         </Button>
                      </form>
