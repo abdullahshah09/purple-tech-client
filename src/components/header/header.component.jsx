@@ -15,15 +15,16 @@ const Header = () => {
   const dispatch = useDispatch();
   const userLoggedIn = useSelector( (state) => state.user.currentUser);
   const hidden = useSelector( (state) => state.cart.hidden);
-  
+  Axios.defaults.withCredentials = true;
 
   const logoutUser = () => {
-    Axios.post('https://purple-tech-co.herokuapp.com/logout', {
+    Axios.delete('https://purple-tech-co.herokuapp.com/logout', {
        }).then((response) => {
          console.log(response);
           isUserLoggedIn();
-       });
-       
+       }).catch(error => {
+         console.log("logout error", error);
+       })
     } 
 
 
