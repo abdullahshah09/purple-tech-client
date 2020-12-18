@@ -66,12 +66,6 @@ const SignIn = () => {
    }
 
 
-
-   window.onbeforeunload = function (e) {
-      console.log(e);
-      return true;
-  }
-
   
       return(
          <div className="sign-in">
