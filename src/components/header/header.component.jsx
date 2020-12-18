@@ -17,16 +17,23 @@ const Header = () => {
   const hidden = useSelector( (state) => state.cart.hidden);
   
 
+  const logoutUser = () => {
+    Axios.post('https://purple-tech-co.herokuapp.com/logout', {
+       }).then((response) => {
+         console.log(response);
+          isUserLoggedIn();
+       });
+       
+    } 
 
 
 
 
 
 
-
- const isUserLoggedIn = (loginStatus) => {
+ const isUserLoggedIn = () => {
     dispatch({type: UserActionTypes.SET_CURRENT_USER,
-       payload: loginStatus
+       payload: null
     });
  }
 
@@ -52,7 +59,7 @@ const Header = () => {
       }
       {
         userLoggedIn ? (
-          <Nav.Link href="/" > Logout </Nav.Link>
+          <Nav.Link href="/" onClick={logoutUser} > Logout </Nav.Link>
         ) : null
       }
 
