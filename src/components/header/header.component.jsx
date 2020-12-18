@@ -34,7 +34,7 @@ const Header = () => {
 
  const isUserLoggedIn = () => {
     dispatch({type: UserActionTypes.SET_CURRENT_USER,
-       payload: "NO_USER_FOUND"
+       
     });
  }
 
