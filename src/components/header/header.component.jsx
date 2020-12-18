@@ -18,7 +18,7 @@ const Header = () => {
   Axios.defaults.withCredentials = true;
 
   const logoutUser = () => {
-    Axios.delete('https://purple-tech-co.herokuapp.com/logout', {
+    Axios.post('https://purple-tech-co.herokuapp.com/logout', {
        }).then((response) => {
          console.log(response);
           isUserLoggedIn();
@@ -60,7 +60,7 @@ const Header = () => {
       }
       {
         userLoggedIn ? (
-          <Nav.Link href="/" onClick={logoutUser} > Logout </Nav.Link>
+          <Nav.Link href="/" onClick={() => logoutUser()} > Logout </Nav.Link>
         ) : null
       }
 
