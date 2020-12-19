@@ -1,3 +1,7 @@
+# View working demo at https://purple-tech.netlify.app/
+
+Please allow a few seconds for server to start up.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
