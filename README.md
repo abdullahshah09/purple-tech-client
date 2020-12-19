@@ -1,4 +1,4 @@
-# View working demo at https://purple-tech.netlify.app/
+# View live site at https://purple-tech.netlify.app/
 
 Please allow a few seconds for server to start up.
 
