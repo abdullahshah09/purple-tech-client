@@ -2,7 +2,7 @@
 
 Please allow a few seconds for server to start up.
 
-Client-side source code for Purple-Tech Co. A Fullstack eCommerce React App where you can purchase consumer tech. 
+Client-side code for Purple-Tech Co. A Fullstack eCommerce React App where you can purchase consumer tech. 
 
 Made using MERN stack (MySQL, Express, React, Node). A full stack create-react-app.
 
